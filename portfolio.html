@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>shop</title>
+  <title>Portfolio_Donatella</title>
   <!-- resetten van browsers -->
   <link rel="stylesheet" href="css/reset.css">
   <!-- Bootstrap CSS -->
@@ -20,22 +20,28 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-warning-subtle">
     <div class="container-fluid">
-      <a class="navbar-brand text-purple" href="./index.html">Donatella Joëlle Tamayo</a>
+      <a class="navbar-brand nombre-personalizado" href="./portfolio.html">
+    <img src="assets/images/pom-logo.png" alt="logo" class="logo-navbar"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
 
      <!--NAVBAR-->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+       <!--NAVBAR-->
+       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link text-purple" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-purple" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-purple" href="./About-me.html">About-me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-purple" href="./contact.html">Contact</a>
@@ -67,281 +73,305 @@
 
       <!-- Projecten Sectie -->
          
-      <section id="projecten" class="py-5 bg-gradient-corner text-white">
-        <style>
-            .bg-gradient-corner {
-                background: linear-gradient(#ccccff, #662ba4) !important; 
-            }
-        </style>
+      <section id="projecten" class="custom-bg projects-section py-5 bg-gradient-corner text-white">
         <div class="container text-center">
-            <h2 class="text-purple mb-4">Mijn Projecten</h1>
-            <div class="row g-4">
-
-
-                <!-- Project 1 -->
-                <div class="col-md-4">
-                    <div class="card shadow-lg" data-bs-toggle="modal" data-bs-target="#project1Modal" style="border-radius: 20px; overflow: hidden;">
-                        <video width="100%" autoplay muted loop style="border-radius: 20px;">
-                            <source src="assets/images/auto.MP4" type="video/mp4"></video>
-                        <div class="card-body text-center">
-                            <h5 class="card-title" style="border-radius: 20px; padding: 10px; margin: 0;">Project 1</h5>
-                            <p class="card-text">"Servo"</p>
-                            <button type="button" class="btn btn-orange rounded-pill">Learn more</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="col-md-4">
-                    <div class="card shadow-lg" data-bs-toggle="modal" data-bs-target="#project2Modal" style="border-radius: 20px; overflow: hidden;">
-                        <video width="100%" autoplay muted loop style="border-radius: 20px;">
-                            <source src="assets/images/arduino.MP4" type="video/mp4"></video>
-                        <div class="card-body text-center">
-                            <h5 class="card-title" style="border-radius: 20px; padding: 10px; margin: 0;">Project 2</h5>
-                            <p class="card-text">"LED light"</p>
-                            <button type="button" class="btn btn-orange rounded-pill">Learn more</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="col-md-4">
-                    <div class="card shadow-lg" data-bs-toggle="modal" data-bs-target="#project3Modal" style="border-radius: 20px; overflow: hidden;">
-                        <video width="100%" autoplay muted loop style="border-radius: 20px;">
-                            <source src="assets/images/soldeer.MP4" type="video/mp4"></video>
-                            <div class="card-body text-center">
-                                <h4 class="card-title" style="border-radius: 20px; padding: 10px; margin: 0;">Project 3</h4>                                
-                                <p class="card-text">"soldeeroefening"</p>
-                                <button type="button" class="btn btn-orange rounded-pill">Learn more</button>
-                            </div>
-                    </div>
-                </div>
-                <!-- Project 4 -->
-                <div class="col-md-4">
-                    <div class="card shadow-lg" data-bs-toggle="modal" data-bs-target="#project4Modal" style="border-radius: 20px; overflow: hidden;">
-                        <video width="100%" autoplay muted loop style="border-radius: 20px;">
-                            <source src="assets/images/a.MP4" type="video/mp4"></video>
-                            <div class="card-body text-center">
-                                <div class="rounded-pill px-3 py-2 d-inline-block">
-                                </div>
-                                <h4 class="card-title" style="border-radius: 20px; padding: 10px; margin: 0;">Project 4</h4>                                
-                                <p class="card-text">"Prothese"</p>
-                                <button type="button" class="btn btn-orange rounded-pill">Learn more</button>
-                            </div>
-                    </div>
-                </div>
-                <!-- Project 5 -->
-                <div class="col-md-4">
-                    <div class="card shadow-lg" data-bs-toggle="modal" data-bs-target="#project5Modal" style="border-radius: 20px; overflow: hidden;">
-                        <video width="100%" autoplay muted loop style="border-radius: 20px;">
-                            <source src="assets/images/b.MP4" type="video/mp4"></video>
-                        <div class="card-body text-center">
-                            <div class="rounded-pill px-3 py-2 d-inline-block">
-                            </div>
-                            <h4 class="card-title" style="border-radius: 20px; padding: 10px; margin: 0;">Project 5</h4>                                
-                            <p class="card-text">Thermometer</p>
-                            <button type="button" class="btn btn-orange rounded-pill">Learn more</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 6 -->
-                <div class="col-md-4">
-                    <div class="card shadow-lg" data-bs-toggle="modal" data-bs-target="#project6Modal" style="border-radius: 20px; overflow: hidden;">
-                        <video width="100%" autoplay muted loop style="border-radius: 20px;">
-                            <source src="assets/images/c.MP4" type="video/mp4">
-                        </video>
-                        <div class="card-body text-center">
-                            <div class="rounded-pill px-3 py-2 d-inline-block">
-                            </div>
-                            <h4 class="card-title" style="border-radius: 20px; padding: 10px; margin: 0;">Project 6</h4>
-                            <p class="card-text">"Smart-hub"</p>
-                            <button type="button" class="btn btn-orange rounded-pill">Learn more</button>
-                        </div>
-                    </div>
-                </div>
+          <h1 class="custom-purple mb-4">"My projects"</h1>      
+          <div class="row justify-content-center g-4">
+      
+            <!-- Project 1 -->
+            <!-- Project 1 -->
+            <div class="col-6 col-md-4">
+              <div class="project-capsule text-center">
+                <video class="img-fluid project-media" autoplay muted loop playsinline>
+                  <source src="assets/images/arduino.MP4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <h6>"Manually Controlled LED"</h6>
+                <p class="underline-text" data-bs-toggle="modal" data-bs-target="#project1Modal">Learn more</p>
+              </div>
             </div>
+
+      
+            <!-- Project 2 -->
+            <div class="col-6 col-md-4">
+              <div class="project-capsule text-center">
+                <video class="img-fluid project-media" autoplay muted loop playsinline>
+                  <source src="assets/images/auto.MP4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <h6>"Autonomously Controlled Car"</h6>
+                <p class="underline-text" data-bs-toggle="modal" data-bs-target="#project2Modal" >Learn more</p>
+              </div>
+            </div>
+      
+            <!-- Project 3 -->
+            <div class="col-6 col-md-4">
+              <div class="project-capsule text-center">
+                <video class="img-fluid project-media" autoplay muted loop playsinline>
+                  <source src="assets/images/soldeer.MP4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <h6>"Blinking-lights"</h6>
+                <p class="underline-text" data-bs-toggle="modal" data-bs-target="#project3Modal" >Learn more</p>
+              </div>
+            </div>
+      
+            <!-- Project 4 -->
+            <div class="col-6 col-md-4">
+              <div class="project-capsule text-center">
+                <img class="img-fluid project-media" src="assets/images/oranje jus.png" alt="Project 4" />
+                <h6>"Summer breeze"</h6>
+                <p class="underline-text" data-bs-toggle="modal" data-bs-target="#project4Modal" >Learn more</p>
+              </div>
+            </div>
+      
+            <!-- Project 5 -->
+            <div class="col-6 col-md-4">
+              <div class="project-capsule text-center">
+                <img class="img-fluid project-media" src="assets/images/coraline mock.png" alt="Project 5" />
+                <h6>"Coraline"</h6>
+                <p class="underline-text" data-bs-toggle="modal" data-bs-target="#project5Modal" >Learn more</p>
+              </div>
+            </div>
+      
+            <!-- Project 6 -->
+            <div class="col-6 col-md-4">
+              <div class="project-capsule text-center">
+                <img class="img-fluid project-media" src="assets/images/web-burgerij.png" alt="Project 6" />
+                <h6>"Wijkcentrum de Burgerij"</h6>
+                <p class="underline-text" data-bs-toggle="modal" data-bs-target="#project6Modal" >Learn more</p>
+              </div>
+            </div>
+      
+          </div>
         </div>
-    </section>
+      </section>
+      
 
     <!-- Modals -->
-     <!--project1-->
-    <div class="modal fade" id="project1Modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Project 1 Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Voor dit project werkten we in een team van drie aan de ontwikkeling van een **Arduino-gestuurde auto**. Het doel was om een volledig functionele besturing te programmeren die de auto in **alle richtingen** kon laten bewegen:</p>
-            <ul class="list-group">
-                <li class="list-group-item"><span class="icon">✅</span> Vooruit</li>
-                <li class="list-group-item"><span class="icon">✅</span> Achteruit</li>
-                <li class="list-group-item"><span class="icon">✅</span> Links</li>
-                <li class="list-group-item"><span class="icon">✅</span> Rechts</li>
-            </ul>
+   <!--project1-->
+<div class="modal fade" id="project1Modal" tabindex="-1">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Project 1 Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+              <p>For this project, I worked on creating a **manually controlled LED system**. The goal was to design a simple circuit where the LEDs could be turned on and off manually using switches or buttons.</p>
+              <ul class="list-group">
+                  <li class="list-group-item"><span class="icon">✅</span> Individual LED control</li>
+                  <li class="list-group-item"><span class="icon">✅</span> Manual switching</li>
+                  <li class="list-group-item"><span class="icon">✅</span> Clear indication of on/off states</li>
+              </ul>
 
-            <h5 class="mt-4">Uitvoering en Werkwijze</h5>
-            <p>We begonnen helemaal vanaf nul, wat betekende dat we de volledige code zelf moesten schrijven en implementeren. De besturing werd mogelijk gemaakt met behulp van servo’s, die de wielen van de auto aanstuurden.</p>
-            <p>We programmeerden alles in Arduino IDE, waarbij we gebruikmaakten van de Servo.h-bibliotheek voor nauwkeurige aansturing. Door trial-and-error verbeterden we de bewegingen van de auto en optimaliseerden we de code voor snellere en soepelere besturing.</p>
+              <h5 class="mt-4">Implementation and Approach</h5>
+              <p>I built the circuit using LEDs, switches, resistors, and a power source. Each LED was connected through its own switch, allowing manual control of its state.</p>
+              <p>No programming was involved since the control was purely manual. The focus was on wiring the components correctly and ensuring safe operation of the LEDs using appropriate resistors.</p>
 
-            <h5 class="mt-4">Teamwerk en Uitdagingen</h5>
-            <p>Samenwerking speelde een grote rol in dit project. We verdeelden de taken als volgt:</p>
-            <ul class="list-group">
-                <li class="list-group-item"><span class="icon">🔹</span> **Hardware-opstelling** (servo’s en bedrading)</li>
-                <li class="list-group-item"><span class="icon">🔹</span> **Code schrijven** en testen van bewegingen</li>
-                <li class="list-group-item"><span class="icon">🔹</span> **Analyseren en optimaliseren** van de prestaties</li>
-            </ul>
-            <p>Tijdens het project liepen we tegen enkele uitdagingen aan, zoals **onnauwkeurige servo-aansturing** en **vertraging in de respons**, maar door **debugging en optimalisatie** wisten we deze problemen succesvol op te lossen.</p>
+              <h5 class="mt-4">Challenges and Problem Solving</h5>
+              <p>Working independently, I was responsible for the entire project:</p>
+              <ul class="list-group">
+                  <li class="list-group-item"><span class="icon">🔹</span> **Component selection** (LEDs, switches, resistors)</li>
+                  <li class="list-group-item"><span class="icon">🔹</span> **Circuit assembly** and wiring</li>
+                  <li class="list-group-item"><span class="icon">🔹</span> **Testing** each LED to ensure correct manual control</li>
+              </ul>
+              <p>The main challenges involved ensuring correct wiring to avoid shorts and verifying that the LEDs lit up properly without overloading the circuit.</p>
 
-            <h5 class="mt-4">Conclusie</h5>
-            <p>Dit project gaf ons waardevolle inzichten in **servo-aansturing, Arduino-programmering en teamwork**. Uiteindelijk slaagden we erin om een werkende, bestuurbare auto te maken met een **volledig zelfgeschreven code**.</p>
-        </div>
-                </div>
-            </div>
-        </div>
+              <h5 class="mt-4">Conclusion</h5>
+              <p>This project helped me understand basic electronic circuits and manual control of components. I successfully created a functional LED control system without any programming, relying purely on hardware.</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+  
+ <!-- Project 2 -->
+<div class="modal fade" id="project2Modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Project 1 Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>For this project, I worked on the development of an **Arduino-controlled car**. The goal was to program a fully functional control system that could move the car in **all directions**:</p>
+        <ul class="list-group">
+          <li class="list-group-item"><span class="icon">✅</span> Forward</li>
+          <li class="list-group-item"><span class="icon">✅</span> Backward</li>
+          <li class="list-group-item"><span class="icon">✅</span> Left</li>
+          <li class="list-group-item"><span class="icon">✅</span> Right</li>
+        </ul>
+
+        <h5 class="mt-4">Implementation and Approach</h5>
+        <p>I started completely from scratch, which meant I had to write and implement all the code myself. The control was made possible using servos that directed the car’s wheels.</p>
+        <p>I programmed everything in the Arduino IDE, using the Servo.h library for precise control. Through trial and error, I improved the car’s movements and optimized the code for faster and smoother steering.</p>
+
+        <h5 class="mt-4">Challenges and Problem Solving</h5>
+        <p>Working independently, I was responsible for every part of the project:</p>
+        <ul class="list-group">
+          <li class="list-group-item"><span class="icon">🔹</span> **Hardware setup** (servos and wiring)</li>
+          <li class="list-group-item"><span class="icon">🔹</span> **Writing code** and testing movements</li>
+          <li class="list-group-item"><span class="icon">🔹</span> **Analyzing and optimizing** performance</li>
+        </ul>
+        <p>Throughout the project, I faced challenges such as **inaccurate servo control** and **delayed responses**, but I managed to solve these through **debugging and optimization**.</p>
+
+        <h5 class="mt-4">Conclusion</h5>
+        <p>This project gave me valuable insights into **servo control, Arduino programming, and problem solving**. In the end, I successfully created a working, controllable car with **fully self-written code**.</p>
+      </div>
     </div>
-    <!--project2-->
-    <div class="modal fade" id="project2Modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Project 2 Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>In dit individuele project ging het om het aansturen van een **LED met een drukknop via een Arduino. Het doel was om een LED te laten branden zodra de knop werd ingedrukt.</p>
-    
-                    <h5 class="mt-4">Uitvoering en Werkwijze</h5>
-                    <ul class="list-group">
-                        <li class="list-group-item"><span class="icon">🔹</span> Een LED en een drukknop aangesloten op een Arduino Uno.</li>
-                        <li class="list-group-item"><span class="icon">🔹</span> Code geschreven in Arduino IDE met behulp van de digitalRead() en digitalWrite() functies.</li>
-                        <li class="list-group-item"><span class="icon">🔹</span> Zodra de knop werd ingedrukt, schakelde de LED aan, en als de knop werd losgelaten, ging de LED uit.</li>
-                    </ul>
-    
-                    <h5 class="mt-4">Codevoorbeeld</h5>
-                    <pre><code>
-                    int buttonPin = 2; // Drukknop aangesloten op pin 2
-                    int ledPin = 13;   // LED aangesloten op pin 13
-                    
-                    void setup() {
-                        pinMode(buttonPin, INPUT);
-                        pinMode(ledPin, OUTPUT);
-                    }
-                    
-                    void loop() {
-                        int buttonState = digitalRead(buttonPin);
-                        if (buttonState == HIGH) {
-                            digitalWrite(ledPin, HIGH); // LED aan
-                        } else {
-                            digitalWrite(ledPin, LOW);  // LED uit
-                        }
-                    }
-                    </code></pre>
-    
-                    <h5 class="mt-4">Conclusie</h5>
-                    <p>Dit project gaf een basisinzicht in het gebruik van Arduino, input/output-controle, en hardware-programmering. Door dit project heb ik geleerd hoe je een fysieke interactie kunt maken met een microcontroller.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+  </div>
+</div>
+
             </div>
         </div>
     </div>
     <!--project3-->
-    <div class="modal fade" id="project3Modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Project 3 Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Dit project was een individuele soldeeroefening, waarbij we 13 LED-lampjes en 13 transistors hebben gesoldeerd om een knipperend lichteffect te creëren.</p>
+<div class="modal fade" id="project3Modal" tabindex="-1">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Project 3 Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>This project was an individual soldering exercise, where I soldered 13 LEDs and 13 transistors to create a blinking light effect.</p>
 
-                    <h5 class="mt-4">🔧 Gebruikte Componenten</h5>
-                    <ul class="list-group">
-                        <li class="list-group-item"><span class="icon">💡</span> 13 LED-lampjes</li>
-                        <li class="list-group-item"><span class="icon">⚡</span> 13 transistors</li>
-                        <li class="list-group-item"><span class="icon">🔩</span> Weerstanden en bedrading</li>
-                        <li class="list-group-item"><span class="icon">🔧</span> Soldeerbout en tin</li>
-                        <li class="list-group-item"><span class="icon">🔋</span> Voedingsbron (9V of 12V)</li>
-                    </ul>
-    
-                    <h5 class="mt-4">🛠 Uitvoering en Werkwijze</h5>
-                    <p>Het soldeerproces bestond uit de volgende stappen:</p>
-                    <ul class="list-group">
-                        <li class="list-group-item"><span class="icon">✅</span> De LED's en transistors correct aansluiten op de printplaat.</li>
-                        <li class="list-group-item"><span class="icon">✅</span> Gebruik van weerstanden om overstroom te voorkomen.</li>
-                        <li class="list-group-item"><span class="icon">✅</span> De componenten solderen met precisie om een stevig circuit te krijgen.</li>
-                        <li class="list-group-item"><span class="icon">✅</span> Testen of de LED's correct knipperen door stroomtoevoer te geven.</li>
-                    </ul>
-    
-                    <h5 class="mt-4">📌 Leerpunten</h5>
-                    <p>Door dit project heb ik de volgende vaardigheden ontwikkeld:</p>
-                    <ul class="list-group">
-                        <li class="list-group-item"><span class="icon">🔹</span> Precisie en netheid bij solderen.</li>
-                        <li class="list-group-item"><span class="icon">🔹</span> Het correct plaatsen van LED’s en transistors** in een circuit.</li>
-                        <li class="list-group-item"><span class="icon">🔹</span> Begrijpen hoe een knipperlichtcircuit werkt.</li>
-                    </ul>
-    
-                    <h5 class="mt-4">🎯 Conclusie</h5>
-                    <p>Dit soldeerproject heeft me niet alleen geholpen om beter te worden in **soldeertechnieken, maar ook om inzicht te krijgen in het gebruik van transistors en weerstanden binnen een elektronisch circuit. Het eindresultaat was een knipperend LED-patroon, wat een mooie visuele representatie gaf van hoe stroom en schakelingen samenwerken.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+              <h5 class="mt-4">🔧 Components Used</h5>
+              <ul class="list-group">
+                  <li class="list-group-item"><span class="icon">💡</span> 13 LEDs</li>
+                  <li class="list-group-item"><span class="icon">⚡</span> 13 transistors</li>
+                  <li class="list-group-item"><span class="icon">🔩</span> Resistors and wiring</li>
+                  <li class="list-group-item"><span class="icon">🔧</span> Soldering iron and solder</li>
+                  <li class="list-group-item"><span class="icon">🔋</span> Power supply (9V or 12V)</li>
+              </ul>
+
+              <h5 class="mt-4">🛠 Execution and Method</h5>
+              <p>The soldering process consisted of the following steps:</p>
+              <ul class="list-group">
+                  <li class="list-group-item"><span class="icon">✅</span> Correctly connecting the LEDs and transistors to the circuit board.</li>
+                  <li class="list-group-item"><span class="icon">✅</span> Using resistors to prevent overcurrent.</li>
+                  <li class="list-group-item"><span class="icon">✅</span> Soldering the components precisely to create a solid circuit.</li>
+                  <li class="list-group-item"><span class="icon">✅</span> Testing if the LEDs blink correctly by supplying power.</li>
+              </ul>
+
+              <h5 class="mt-4">📌 Lessons Learned</h5>
+              <p>Through this project, I developed the following skills:</p>
+              <ul class="list-group">
+                  <li class="list-group-item"><span class="icon">🔹</span> Precision and neatness in soldering.</li>
+                  <li class="list-group-item"><span class="icon">🔹</span> Correctly placing LEDs and transistors in a circuit.</li>
+                  <li class="list-group-item"><span class="icon">🔹</span> Understanding how a blinking light circuit works.</li>
+              </ul>
+
+              <h5 class="mt-4">🎯 Conclusion</h5>
+              <p>This soldering project not only helped me improve my <strong>soldering techniques</strong> but also gave me insight into the use of transistors and resistors within an electronic circuit. The final result was a blinking LED pattern, providing a nice visual representation of how electricity and circuits work together.</p>
+          </div>
+      </div>
+  </div>
+</div>
+
     <!--project4-->
-    <div class="modal fade" id="project4Modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Project 2 Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Meer informatie over project ...</p>
-                </div>
-            </div>
-        </div>
+<!--project4-->
+<div class="modal fade" id="project4Modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Summer breeze</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>For this project, I created a digital artwork called <strong>"Ashtrap Art"</strong> using Adobe Illustrator. The piece was designed with a summer theme in mind, combining colors and elements that reflect warmth, sunlight, and relaxation.</p>
+
+        <h5 class="mt-4">🎨 Concept and Color Choices</h5>
+        <p>The main color I used was <strong>dark blue</strong>, symbolizing the deep summer sky or ocean. To contrast that, I added <strong>bright orange tones</strong>, representing the warmth of the sun and the energy of summer days. These contrasting colors gave the artwork both depth and vibrancy.</p>
+        <p>I also included a <strong>glass element</strong> in the design—like a glass of water or a summer drink—bringing a refreshing, cooling touch to the otherwise hot-toned image. This created a visual balance and helped communicate the idea of refreshment during summer heat.</p>
+
+        <h5 class="mt-4">🖥 Tools and Techniques</h5>
+        <ul class="list-group">
+          <li class="list-group-item"><span class="icon">🧩</span> Created using <strong>Adobe Illustrator</strong></li>
+          <li class="list-group-item"><span class="icon">🎨</span> Used gradients and layer effects for lighting</li>
+          <li class="list-group-item"><span class="icon">🌞</span> Focused on warm vs cool color contrast</li>
+          <li class="list-group-item"><span class="icon">💡</span> Inspiration from real summer scenery and abstract art</li>
+        </ul>
+
+        <h5 class="mt-4">📌 Reflection</h5>
+        <p>This project allowed me to experiment with <strong>color psychology</strong> and digital composition. It was interesting to see how combining cool and warm tones could evoke strong seasonal feelings. "Ashtrap Art" became a creative expression of how summer feels—hot, bright, and refreshing all at once.</p>
+      </div>
     </div>
-    <!--project5-->
-    <div class="modal fade" id="project5Modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Project 2 Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Meer informatie over project ...</p>
-                </div>
-            </div>
-        </div>
+  </div>
+</div>
+
+  <!-- Project 5 -->
+<div class="modal fade" id="project5Modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Coraline filmposter</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>For this project, I had to design a movie poster based on an existing film. I chose *Coraline*, a film known for its eerie atmosphere and unique visual style. The task was to create an **original poster**, not a copy of the existing one. This project was assigned at my previous school.</p>
+
+        <h5 class="mt-4">🎨 Concept and Creative Choices</h5>
+        <p>I decided to reimagine the film with a completely different visual style. I drew Coraline myself, using **new colors and tone** to give it a fresh, yet still creepy, appearance.</p>
+        <ul class="list-group mt-2">
+          <li class="list-group-item"><span class="icon">🏚️</span> I added a **creepy house** in the background to set the mood.</li>
+          <li class="list-group-item"><span class="icon">🌳</span> Next to it, I drew a **twisted, scary tree** to build suspense.</li>
+          <li class="list-group-item"><span class="icon">🌕</span> Behind everything, the **moon** shines bright—but if you look closely, you’ll see **four buttons** inside it.</li>
+        </ul>
+
+        <p class="mt-3">These four buttons are a symbolic element, representing the main themes of the movie—control, illusion, danger, and choice. Using Adobe Illustrator, I carefully composed the layout and colors to reflect both mystery and beauty.</p>
+
+        <h5 class="mt-4">💡 What I Learned</h5>
+        <ul class="list-group">
+          <li class="list-group-item"><span class="icon">🖌️</span> How to visually reinterpret an existing story.</li>
+          <li class="list-group-item"><span class="icon">🎨</span> Using **color theory** to create mood and tension.</li>
+          <li class="list-group-item"><span class="icon">🧠</span> Thinking creatively under project guidelines.</li>
+        </ul>
+
+        <p class="mt-3">This project helped me grow as a designer and storyteller, while giving me the freedom to explore **creepy aesthetics** and **symbolism** through illustration.</p>
+      </div>
     </div>
-    <!--project6-->
-    <div class="modal fade" id="project6Modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Project 2 Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Meer informatie over project ...</p>
-                </div>
-            </div>
-        </div>
+  </div>
+</div>
+
+  <!-- Project 6 -->
+<div class="modal fade" id="project6Modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Website Design for Wijkcentrum de Burgerij</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>For this project, I was responsible for designing a full website for a real community center called <strong>De Burgerij</strong>. The goal was to create a clean and user-friendly website layout that reflected the atmosphere and purpose of the community center.</p>
+
+        <h5 class="mt-4">🎯 Project Goal</h5>
+        <p>The objective was to visualize the layout, pages, and user experience before development. I worked closely with their team to make sure the design matched their vision and needs.</p>
+
+        <h5 class="mt-4">🖥 Pages and Structure</h5>
+        <ul class="list-group">
+          <li class="list-group-item"><span class="icon">📍</span> Homepage with introduction and news</li>
+          <li class="list-group-item"><span class="icon">📅</span> Activity calendar</li>
+          <li class="list-group-item"><span class="icon">📂</span> Information pages per department</li>
+          <li class="list-group-item"><span class="icon">🗺️</span> Location and contact page with an interactive map</li>
+        </ul>
+
+        <h5 class="mt-4">📐 Tools and Process</h5>
+        <p>I used tools like <strong>Adobe XD</strong> and <strong>Figma</strong> to build wireframes and visual mockups. After several design reviews, the website was developed and is now <strong>live</strong> and publicly accessible.</p>
+
+        <h5 class="mt-4">🌐 Result</h5>
+        <p>The final design was published online and is now actively being used by visitors of De Burgerij. You can even find it online by searching for their official site!</p>
+      </div>
     </div>
+  </div>
+</div>
+
 
 <!-- Footer -->
-<footer class="bg-purple text-white text-center py-3">
-  <p>&copy; 2025 Portfolio Donatella Joelle.</p>
-  <style>
-      .bg-purple {
-          background-color: #6a0dad !important; /* Custom purple */
-      }
-  </style>
+<footer class="footer bg-purple text-white text-center py-3">
+  <p>&copy; 2025 Portfolio Donatella Joëlle.</p>
 </footer>
 
-
 </body>
+</html>

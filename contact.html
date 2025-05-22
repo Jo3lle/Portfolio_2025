@@ -2,33 +2,38 @@
 <html lang="nl-BE">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>shop</title>
-  <!-- resetten van browsers -->
-  <link rel="stylesheet" href="css/reset.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio_Donatella</title>
+
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- JavaScript: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
-    </script>
-  <!-- eigen geschreven css voor jouw html-bestand -->
-  <link rel="stylesheet" href="css/style.css">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <!-- Eigen CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-warning-subtle">
     <div class="container-fluid">
-      <a class="navbar-brand text-purple" href="./index.html">Donatella Joëlle Tamayo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="assets/images/pom-logo.png" alt="logo" class="logo-navbar">  </a>       
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-
-     <!--NAVBAR-->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -38,75 +43,109 @@
             <a class="nav-link text-purple" href="./portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link text-purple" href="./About-me.html">About-me</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link text-purple" href="./contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <style>
-    /* Custom purple color for text */
-    .text-purple {
-      color: purple;
-    }
-    .navbar {
-    background-color: #f8f9fa;  /* Light grey background */
-  }
 
-  /* Change text color on hover and active to orange */
-  .navbar-nav .nav-link:hover,
-  .navbar-nav .nav-link.active {
-    color: rgb(253, 101, 0);  /* Oranje tekstkleur */
-  }
-
-  /* Inactieve tab tekstkleur */
-  .navbar-nav .nav-link {
-    color: purple;  /* Paarse kleur voor inactieve tabs */
-    font-weight: 500;}
-  </style>
-    <!-- Contact Sectie -->
-    <section id="contact" class="vh-100 d-flex align-items-center text-center bg-warning-subtle text-white">
-      <div class="container">
-      </style>
-      <h1 class="text-purple">Contact</h1>
-      <p class="text-purple"><strong>Wil je samenwerken of gewoon praten over IoT en innovatie? Neem contact met me op via e-mail/socials.</strong></p>
-      <style>
-          .text-purple {
-              color: purple; /* Define un nuevo color */
-          }
-      </style>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
-      <!-- Ícons -->
-      <a href="https://instagram.com/donatellita" target="_blank" class="me-3">
-          <i class="bi bi-instagram fs-1 text-danger"></i>
-      </a>
-      <a href="tel:+32492564415" target="_blank" class="me-3">
-          <i class="bi bi-telephone-fill fs-1 text-success"></i>
-      </a>
-      
-      <a href="mailto:donatella.joelle.tamayo@gmail.com" target="_blank" class="me-3">
-          <i class="bi bi-envelope-fill fs-1 text-dark"></i>
-      </a>
-      
-      <a href="https://www.linkedin.com/in/Donatella Joëlle Tamayo" target="_blank" class="me-3">
-          <i class="bi bi-linkedin fs-1 text-primary"></i>
-      </a>
-      </div>
+  <!-- Contact Sectie -->
+  <section id="contact" class="bg-warning-subtle text-white d-flex flex-column text-center" style="min-height: 20vh;">
+    <div class="container mt-3">
+      <h1 class="text-purple">Contact Me</h1>
+      <p class="text-purple">
+        <strong>"Want to collaborate or just talk about IoT and innovation? Get in touch with me via email or social media."</strong>
+      </p>
+    </div>
   </section>
 
+  <section class="bg-soft-pink py-5">
+    <div class="container">
+      <div class="row gy-5 align-items-start">
+        <!-- Tekstgedeelte -->
+        <div class="col-12 col-lg-6">
+          <h2 class="text-purple mb-4">Get In Touch</h2>
+          <p class="custom-text-color mb-4">We’re revolutionizing the future with cutting-edge IoT solutions. Whether you're interested in integrating
+            IoT into your business, need support with een project, of heb je vragen over onze technologie, we zijn er om te helpen.</p>
 
-      <!-- Footer -->
-      <footer class="bg-purple text-white text-center py-3">
-          <p>&copy; 2025 Portfolio Donatella Joelle.</p>
-          <style>
-              .bg-purple {
-                  background-color: #6a0dad !important; /* Custom purple */
-              }
-          </style>
-      </footer>
+          <div class="mt-4 contact-info">
+            <ul class="list-unstyled">
+              <li><i class="fas fa-map-marker-alt"></i> Blaak, Rotterdam, Nederland</li>
+              <li><i class="fas fa-phone-alt"></i> +32 492564415</li>
+              <li><i class="fas fa-envelope"></i> donatella.joelle.tamayo@gmail.com</li>
+            </ul>
+            <div class="divider"></div>
+            <h2 class="follow-heading">Follow us:</h2>
+          </div>
+
+          <!-- Icons -->
+          <a href="https://instagram.com/donatellita" target="_blank" class="me-3">
+            <i class="bi bi-instagram fs-1 text-danger"></i>
+          </a>
+          <a href="tel:+32492564415" target="_blank" class="me-3">
+            <i class="bi bi-telephone-fill fs-1 text-success"></i>
+          </a>
+          <a href="mailto:donatella.joelle.tamayo@gmail.com" target="_blank" class="me-3">
+            <i class="bi bi-envelope-fill fs-1 text-dark"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/Donatella Joëlle Tamayo" target="_blank" class="me-3">
+            <i class="bi bi-linkedin fs-1 text-primary"></i>
+          </a>
+
+          <div id="map-container">
+            <div id="map"></div>
+          </div>
+        </div>
+
+        <!-- Formulier -->
+        <div class="col-12 col-lg-6">
+          <div class="card shadow-lg border-0 rounded-5 mx-auto" style="max-width: 100%;">
+            <div class="card-body">
+              <h2 class="card-title text-purple mb-4">Send a Message</h2>
+              <form action="send-mail.php" method="POST">
+                <div class="form-group mb-3">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name" />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="email">E-mail</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email here" />
+                </div>
+                <div class="form-group mb-5">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" placeholder="Write down here your question" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-sm rounded-pill btn-custom-purple" style="width: 100px; height: 40px;">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Eigen JS -->
+  <script src="js/contact.js"></script>
+
+  <footer class="bg-purple text-white text-center py-3">
+    <p>&copy; 2025 Portfolio Donatella Joelle.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
 </body>
+
+</html>

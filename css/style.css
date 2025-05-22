@@ -1,42 +1,729 @@
-html, body {
-  box-sizing: border-box;
-  background-color: #fff9f0;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #113743;
-  height: 100%;
-  width: 100%;
-}
-a, a:hover {
-  text-decoration: none;
-  color: #587e8c;
+/* style.css */
+
+/* Algemene stijlen */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
 }
 
-.blauwgrijs {
-  color: #587e8c;
+/* Kleurdefinities */
+.text-purple {
+  color: purple;
 }
-/* Verander de tekstkleur van de actieve tab naar oranje */
-.navbar-nav .nav-link.active {
-  color: rgb(253, 101, 0);  /* Oranje tekstkleur voor de actieve tab */
-}
-
-/* Verander de tekstkleur van de tab bij hover naar oranje */
-.navbar-nav .nav-link:hover {
-  color: rgb(253, 101, 0);  /* Oranje tekstkleur bij hover */
+.custom-text-color {
+  color: #b46b3a; /* aquí pones el color que quieras, este es un azul */
 }
 
-/* Verander de kleur van de tekst voor inactieve tabs */
+.bg-purple {
+  background-color: #6a0dad !important;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f8f9fa;
+}
+
 .navbar-nav .nav-link {
-  color: purple;  /* Paarse kleur voor inactieve tabs */
+  color: purple;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #fd6500;
+}
+
+/* Projectensectie */
+.bg-gradient-corner {
+  background: linear-gradient(#ccccff, #662ba4) !important;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0;
+}
+
+video {
+  border-radius: 20px;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-title {
+  font-weight: 600;
+}
+
+/* over mij*/
+.text-custom{
+  color: rgb(149, 74, 28);
 }
 .btn-orange {
-  background-color: rgb(253, 101, 0);  /* Oranje kleur */
-  color: white;  /* Zorg ervoor dat de tekst wit is */
-  border: none;  /* Geen rand */
-  padding: 12px 24px;  /* Vergroot de knop */
+  background-color: rgb(249, 95, 11);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.btn-orange:hover {
+  background-color: rgb(220, 130, 19);
+  color: white;
+}
+/* Portfolio - afgeronde hoeken */
+.project-capsule video {
+  border-radius: 100px; /* Vergroot voor zachtere hoeken */
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(88, 74, 74, 0.1); /* optioneel voor visuele diepte */
 }
 
-.btn-orange:hover {
-  background-color: rgb(222, 153, 240);  /* Hoverkleur */
+.project-capsule {
+  border-radius: 50px; /* Ook container ronder maken, indien gewenst */
+  padding: 15px;
+  background-color:  rgb(134, 67, 189); /* optioneel voor beter contrast */
 }
+p{
+  color: #fbf4ff;
+}
+.custom-text-color {
+  color: #800080; /* paars, of een andere kleurcode */
+}
+.project-capsule {
+  background-color: #ff7b3e;
+  border-radius: 50px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.project-media {
+  width: 100%;
+  border-radius: 100px;
+  height: 50vh;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/* Zorg dat html en body 100% hoogte hebben en flexbox gebruiken */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content vult de ruimte die overblijft */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex-grow: 1; /* vult de ruimte op */
+}
+.projects-section .project-capsule h6 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.projects-section .underline-text {
+  text-decoration: underline;
+  color: purple;
+  text-align: center;
+  margin-top: 5px;
+}
+.custom-purple {
+  color: rgb(164, 106, 75) !important;
+}
+
+.btn-custom-purple {
+  background-color: rgb(226, 112, 87);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom-purple:hover {
+  background-color: #4a0080;
+  border-color: #4a0080;
+  color: white;
+}
+
+.footer {
+  background-color: #6a0dad;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/*PROJECT 1*/
+#project1Modal .modal-title {
+  color: #b7713c; /* Bootstrap primary blue */
+}
+
+/* Verander de paragrafen in de modal-body */
+#project1Modal .modal-body p {
+  color: #b7713c; /* Donkergrijs */
+}
+
+/* Geef koppen (h5) in de modal-body een andere kleur */
+#project1Modal .modal-body h5 {
+  color: #985ff2; /* Bootstrap success green */
+}
+
+/* Kleur van lijstitems */
+#project1Modal .list-group-item {
+  color: #66615c; /* Bootstrap secondary gray */
+}
+
+/* Optioneel: iconen in lijstjes een andere kleur */
+#project1Modal .icon {
+  color: #c79095; /* Bootstrap danger red */
+
+ /*PROJECT 2*/ 
+}
+#project2Modal .modal-title {
+  color: #b7713c; /* paars */
+}
+
+#project2Modal .modal-body p {
+  color: #b7713c;
+}
+
+#project2Modal .modal-body h5 {
+  color: #985ff2; /* turquoise */
+}
+
+#project2Modal .list-group-item {
+  color: #66615c;
+}
+
+#project2Modal .icon {
+  color: #ffc107; /* geel */
+}
+
+
+/* PROJECT 3 */
+#project3Modal .modal-title {
+  color: #b7713c; /* Bruin/oranje titel */
+  font-weight: bold;
+}
+
+#project3Modal .modal-body p {
+  color: #b7713c; /* Donkergrijze kleur voor paragrafen */
+  font-size: 16px;
+}
+
+#project3Modal .modal-body ul.list-group li {
+  color: #636363; /* Bruin/oranje kleur voor lijstitems */
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#project3Modal .modal-body h5 {
+  color: #985ff2; /* Paarse subkoppen */
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+
+#project3Modal .modal-body ul.list-group li span.icon {
+  color: #ffc107; /* Gele iconen */
+  margin-right: 0.5rem;
+}
+
+
+/* PROJECT 4 */
+#project4Modal .modal-title {
+  color: #b7713c; /* oranje titel voor zomerthema */
+}
+
+#project4Modal .modal-body p {
+  color: #b7713c; /* donkerblauwe tekst voor contrast */
+}
+
+#project4Modal .modal-body h5 {
+  color: #985ff2; /* warm oranje voor subtitels */
+}
+
+#project4Modal .modal-body ul.list-group li {
+  color: #cecef8; /* zelfde donkerblauw voor consistentie */
+  background-color: #4e1e92; /* zachte zandkleur als zomerse achtergrond */
+  border: none;
+}
+
+#project4Modal .icon {
+  color: #00bcd4; /* fris lichtblauw, zoals glas of water */
+}
+
+
+/* PROJECT 5 - Coraline Movie Poster */
+#project5Modal .modal-title {
+  color: #b7713c; /* paarsachtig blauw voor een mysterieuze titel */
+}
+
+#project5Modal .modal-body p {
+  color: #b7713c; /* lichtgrijze tekst voor leesbaarheid */
+}
+
+#project5Modal .modal-body h5 {
+  color: #985ff2; /* warme oranje/roodtint voor subtitels */
+}
+
+#project5Modal .modal-body ul.list-group li {
+  background-color: #4e1e92; /* donkerblauw/paars achtergrond voor lijstitems */
+  color: #cecef8; /* lichtpaars/blauw voor tekst */
+  border: none; /* optioneel: geen rand */
+}
+
+#project5Modal .icon {
+  color: #ffd700; /* gouden gele iconen voor contrast */
+}
+
+
+/* PROJECT 6 – De Burgerij Website Design */
+#project6Modal .modal-title {
+  color: #b7713c; /* Donkerblauw voor een professionele look */
+}
+
+#project6Modal .modal-body p {
+  color: #b7713c; /* Iets lichter donkerblauw voor tekst */
+}
+
+#project6Modal .modal-body h5 {
+  color: #985ff2; /* Frisse turquoise voor sectietitels */
+}
+
+#project6Modal .modal-body ul.list-group li {
+  color: #636363;
+  background-color: #ecf0f1; /* Lichtgrijze achtergrond voor leesbaarheid */
+  border: none;
+}
+
+#project6Modal .icon {
+  color: #f39c12; /* Oranjegeel voor visuele accenten */
+}
+/* Algemene kleuren */
+.text-purple {
+  color: purple;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: rgb(253, 101, 0);
+}
+
+.navbar-nav .nav-link {
+  color: purple;
+  font-weight: 500;
+}
+
+/* Algemene kleuren */
+.text-purple {
+  color: purple;
+}
+
+.bg-purple {
+  background-color: #6a0dad !important;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+}
+
+/* Navbar links kleuren */
+.navbar-nav .nav-link {
+  color: purple;
+  font-weight: 500;
+}
+
+/* Hover en actieve kleur oranje */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: rgb(253, 101, 0);
+}
+
+/* Divider lijn */
+.divider {
+  height: 1px;
+  background-color: #f7a274;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Map container styling */
+#map-container {
+  width: 71vw;           /* 90% van de parent breedte, kan je aanpassen */
+  max-width: 1200px;    /* Grotere max breedte */
+  margin-top: 150px;    /* Meer ruimte boven de container (duwt 'm naar beneden) */
+  border-radius: 20px;
+  overflow: hidden;
+  margin-left: auto;    /* Centeren horizontaal */
+  margin-right: auto;
+}
+
+#map {
+  height: 250px;        /* Hogere map */
+  width: 100%;          /* Breedte helemaal binnen container */
+  border-radius: 50px;
+}
+.contact-info i {
+  color: rgb(254, 89, 23);
+  margin-right: 8px;
+}
+
+.contact-info li {
+  color: rgb(168, 42, 180);
+  margin-bottom: 10px;
+}
+
+.follow-heading {
+  color: purple;
+  margin-top: 25px;
+}
+
+.text-purple {
+  color: purple;
+}
+
+.custom-text-color {
+  color: brown; /* verander dit naar elke kleur die je wilt */
+}
+
+.project-title {
+  color: rgb(255, 255, 255); /* Cambia a cualquier color: #HEX, rgb(), etc. */
+  margin-top: 10px;
+}
+
+.custom-bg {
+  background: linear-gradient(to bottom right, #d2beff, #d2beff);
+  color: white;
+}
+
+.logo-navbar-pom {
+  height: 0px !important;
+  width: auto;
+}
+
+
+footer {
+  margin-top: 0px; /* schuift de footer 50px naar beneden */
+}
+.footer {
+  margin-top: 0; /* of een kleinere margin */
+  padding: 1rem 0;
+}
+.footer-personalizado {
+  margin-top: 0;
+  padding-top: 1rem;
+}
+.nombre-personalizado {
+  color: #800080 !important; /* Cambia este valor por el que tú quieras */
+}
+
+.logo-navbar {
+  height: 80px; /* Vergroot dit naar wens */
+  width: auto;  /* Zorgt dat verhouding blijft kloppen */
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.custom-btn-spacing{
+  margin-top: 2rem;
+}
+/* Brede custom container */
+.custom-width {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: left;
+}
+
+/* Kleinere tekst indien gewenst */
+.custom-width p {
+  margin-right: 60vh;
+  font-size: 1rem; /* pas eventueel aan */
+  line-height: 1.6;
+}
+
+/* Kleurklassen (voorbeeld, aanpasbaar) */
+.text-purple {
+  color: #6a1b9a; /* paarse kleur */
+}
+
+.bg-soft-pink {
+  background-color: #E6E6FA;
+}
+
+.bg-purple {
+  background-color: #6a1b9a;
+}
+
+/* Optionele styling voor je logo */
+.logo-navbar {
+  height: 40px;
+  margin-right: 10px;
+}
+.bg-lavender {
+  background-color: lavender;
+}
+.text-lavender {
+  color: #fd561e; /* Of een andere lavendelkleur naar keuze */
+}
+.bg-lavender {
+  background-color: #E6E6FA; /* zachte lavendel */
+}
+
+.text-purp {
+  color: #6a0dad; /* diep paars */
+}
+
+.logo-navbar{
+  max-width: 100%;
+  height: 70px;
+}
+
+
+
+body {
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.navbar-toggler-icon {
+background-color: #6a0dad;
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+  body {
+    font-size: 15px;
+    background-color: #f0f0f0;
+  }
+  
+}
+
+/* Media query voor smartphones */
+@media (max-width: 600px) {
+  .my-button {
+    margin-top: 50px; /* duwt de knop 50px naar beneden */
+  }
+  .btn-orange{
+    margin-top: 100px; /* duwt de knop 50px naar beneden */
+    order: 2;
+  }
+  .custom-text-start{
+    order: 1;
+  }
+
+  .project-title {
+    font-size: 14px;
+  }
+  #map-container{
+    margin-top: 5vh;
+    width: 500px;
+  }
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+  
+  .project-capsule {
+    width: 100%; /* default 1 per rij */
+  }
+  
+}
+
+  
+  @media (max-width: 767px) {
+    .hide-mobile {
+      display: none;
+    }
+    .col-lg-5 {
+      display: flex;
+      flex-direction: column; /* tekst boven, knop onder */
+      align-items: center;    /* horizontaal centreren */
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .col-lg-5 a button {
+      margin-top: 1rem;       /* ruimte boven de knop */
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      align-self: center;     /* knop centreren */
+      display: block;
+    }
+    .col-lg-5 a {
+      text-decoration: none;
+    }
+    
+    
+    
+
+    .project-capsule {
+      width: 40vh; /* 2 naast elkaar */
+    }
+    .custom-carousel-container {
+      max-width: 100%;     /* Maakt het groter, bijv. 90% van schermbreedte */
+      margin: 0 auto;     /* Centreert horizontaal */
+      padding: 0 10px;    /* Beetje ruimte aan de zijkant */
+    }
+  
+    .project-media {
+      width: 100%;   
+      height: auto;
+    }
+  
+    .project-title {
+      font-size: 16px;
+    }
+    .col-6 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+    .project-capsule {
+      display: flex;             /* zet de video en tekst naast elkaar */
+      align-items: center;       /* verticaal centreren */
+      gap: 1rem;                 /* ruimte tussen video en tekst */
+      max-width: 100%;
+      width: 500px;
+      height: 120px;
+      margin: 1rem auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 0px;             /* optioneel voor binnenruimte */
+    }
+    
+    .project-media {
+      align-items: start;
+      width: 120px;              /* kleinere breedte */
+      height: 80px;              /* kleinere hoogte */
+      border-radius: 8px;
+      object-fit: cover;         /* mooi uitgesneden */
+      margin-top: -10px;         /* beetje naar boven duwen */
+    }
+    
+    /* Tekst opmaak */
+    .project-title {
+      font-size: 14px;
+      margin: 0;
+      text-align: left;
+    }
+      .custom-btn-spacing {
+        margin-top: -5rem;
+        padding: auto;
+        margin-left: 0;
+      }
+      .about-row {
+        display: flex;
+        flex-direction: row;        /* Zet ze naast elkaar */
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    
+      .about-row .col-lg-6 {
+        flex: 0 0 50%;              /* Elk de helft van de breedte */
+        max-width: 50%;
+        text-align: left;
+      }
+    
+      .about-row img {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      .about-row h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+      }
+    
+      .about-row h5 {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+      }
+      .about-row a.btn-orange {
+        margin-top: 5px;
+        display: inline-block;
+      }
+      #home .col-6 img {
+        display: none;
+      }
+      .project-capsule video {
+        width: 50vw;  /* video vult de hele breedte van de kolom */
+        height: 130px; /* hoogte aangepast aan breedte, aspect ratio blijft goed */
+        max-width: 20%; /* niet breder dan de kolom */
+        border-radius: 15px;
+        display: block;  /* voorkomt extra witruimte onder video */
+      }
+      .project-capsule img{
+        width: 50vw;  /* video vult de hele breedte van de kolom */
+        height: 130px; /* hoogte aangepast aan breedte, aspect ratio blijft goed */
+        max-width: 20%; /* niet breder dan de kolom */
+        border-radius: 15px;
+        display: block;  /
+      }
+    }
+    
+    
+    /* style.css */
+
+/* Algemene stijlen */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Kleurdefinities */
+.text-purple {
+  color: purple;
+}
+.custom-text-color {
+  color: #b46b3a;
+}
+
