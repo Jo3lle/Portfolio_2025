@@ -1,24 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Welkom bericht in console
-    console.log("Welkom op het portfolio van Donatella!");
-  
-    // Alert bij klikken op de knop "Bekijk projecten"
-    const btnBekijkProjecten = document.querySelector("#home button.btn-orange");
-    if (btnBekijkProjecten) {
-      btnBekijkProjecten.addEventListener("click", (e) => {
-        e.preventDefault(); // voorkomt navigatie (optioneel)
-        alert("Je gaat nu naar de projectpagina!");
-        // window.location.href = "./portfolio.html"; // als je wil dat hij echt navigeert
-      });
-    }
-  
-    // Alert bij klikken op "Portfolio Highlights" titel
-    const portfolioTitle = document.querySelector("#projecten h2");
-    if (portfolioTitle) {
-      portfolioTitle.style.cursor = "pointer"; // visuele hint
-      portfolioTitle.addEventListener("click", () => {
-        alert("Dit zijn enkele hoogtepunten van mijn portfolio!");
-      });
-    }
-  });
-  
+// Leaflet-kaart
+var map = L.map('map').setView([51.9194, 4.4886], 16);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  attribution: '© OpenStreetMap'
+}).addTo(map);
+
+L.marker([51.9194, 4.4886]).addTo(map)
+  .bindPopup('Blaak, Rotterdam')
+  .openPopup();
